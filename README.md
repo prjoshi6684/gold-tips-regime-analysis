@@ -33,28 +33,39 @@ The default input/output paths are relative to the script, so the program also r
 
 Read `methodology.md` for formulas, window rules, missing-data treatment and limitations. `src/` separates ingestion, break analysis, valuation and indicators; `main.py` orchestrates exports. Tests check numerical identities, a known break, RSI boundaries and initialization, missing values, duplicate rejection, rolling-window behavior, and candidate-month selection.
 
-Development status
+## Development status
 
-The initial analysis pipeline is implemented and runs end to end. The project remains under active development, with the next phase focused on model robustness, scenario analysis, and usability.
+The initial analysis pipeline is implemented and runs end to end. Further development will focus on model robustness, scenario analysis, and usability.
 
-Roadmap
+## Roadmap
 
 The following extensions are planned and are not yet implemented.
 
-Next development priorities
+### Next development priorities
 
-Configurable analysis:Allow users to change the breakpoint date, rolling windows, and RSI period through command-line options.
-Scenario analysis:Estimate how the historical gold benchmark changes under hypothetical TIPS yield movements of ±25, ±50, and ±100 basis points. These are model-conditional scenarios, not causal forecasts.
-Sensitivity analysis:Compare results across alternative sample periods, breakpoint dates, and rolling-window settings.
-Residual diagnostics:Add checks for serial correlation, heteroskedasticity, and model specification.
-Automated testing: Configure GitHub Actions to run the test suite on repository updates.
+- [ ] **Configurable analysis:** Allow users to change the breakpoint date, rolling windows, and RSI period through command-line options.
 
-Further research and usability extensions
+- [ ] **Scenario analysis:** Estimate how the historical gold benchmark changes under hypothetical TIPS yield movements of ±25, ±50, and ±100 basis points. These are model-conditional scenarios, not causal forecasts.
 
-Out-of-sample evaluation:Compare models using chronological training and evaluation periods, including simple forecasting baselines.
-Uncertainty estimates: Display confidence and prediction intervals alongside benchmark estimates, subject to model assumptions.
-Data-quality reporting:Flag missing observations, date gaps, repeated prices, and unusual changes for review.
-Reproducible simulation:Add a documented synthetic-data generator with a fixed random seed and known data-generating assumptions.
+- [ ] **Sensitivity analysis:** Compare results across alternative sample periods, breakpoint dates, and rolling-window settings.
+
+- [ ] **Residual diagnostics:** Add checks for serial correlation, heteroskedasticity, and model specification.
+
+- [ ] **Automated testing:** Configure GitHub Actions to run the test suite on repository updates.
+
+### Further research and usability extensions
+
+- [ ] **Out-of-sample evaluation:** Compare models using chronological training and evaluation periods, including simple forecasting baselines.
+
+- [ ] **Uncertainty estimates:** Display confidence and prediction intervals alongside benchmark estimates, subject to model assumptions.
+
+- [ ] **Data-quality reporting:** Flag missing observations, date gaps, repeated prices, and unusual changes for review.
+
+- [ ] **Reproducible simulation:** Add a documented synthetic-data generator with a fixed random seed and known data-generating assumptions.
+
+- [ ] **Real-data support:** Add documented public-data ingestion, including source attribution, units, and alignment rules.
+
+- [ ] **Research dashboard:** Provide interactive charts, scenario controls, and downloadable results.
 Real-data support:Add documented public-data ingestion, including source attribution, units, and alignment rules.
 Research dashboard: Provide interactive charts, scenario controls, and downloadable results.
 
