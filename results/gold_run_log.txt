@@ -1,0 +1,3 @@
+2026-11-10 12:37:13,566 INFO Starting synthetic-data demonstration
+2026-11-10 12:37:17,055 INFO Loaded 4956 rows; 2007-01-03 to 2025-12-31; missing gold=0 tips=0
+2026-11-10 12:37:20,544 INFO Analysis completed; report: E:\Github Projects\Gold Tips Analysis\gold-tips-regime-analysis\results\report.md

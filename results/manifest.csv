@@ -1,0 +1,17 @@
+file,bytes
+all_series.csv,1491131
+break_tests.csv,156
+chow_grid.png,79879
+dislocation.png,85859
+environment.json,171
+gold_benchmark.png,121050
+gold_run_log.txt,304
+input_sha256.txt,66
+level_model.txt,1861
+monthly_chow_grid.csv,13376
+ols_comparison.csv,1016
+pre2023_cointegration.csv,58
+report.md,3047
+rolling_correlation.png,116537
+stationarity_adf.csv,724
+technicals.png,287796
